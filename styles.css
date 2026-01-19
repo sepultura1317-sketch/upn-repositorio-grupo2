@@ -1,3 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
 body {
-  font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    color: #333;
+    line-height: 1.7;
+}
+
+.hero {
+    position: relative;
+    height: 60vh;
+    background: linear-gradient(135deg, #1abc9c, #16a085);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: url('https://images.unsplash.com/photo-1581092160607-ee67f55b2f0f') center/cover no-repeat;
+    opacity: 0.15;
+}
+
+.hero-content {
+    position: relative;
+    max-width: 900px;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 2.6rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.hero h2 {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.container {
+    max-width: 1100px;
+    margin: -80px auto 60px;
+    padding: 0 20px;
+    display: grid;
+    gap: 30px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    color: #16a085;
+    margin-bottom: 15px;
+}
+
+.card p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.link {
+    display: inline-block;
+    margin-top: 10px;
+    color: #1abc9c;
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.link:hover {
+    border-color: #1abc9c;
+}
+
+.footer {
+    background: #0f3d3e;
+    color: #fff;
+    text-align: center;
+    padding: 25px 15px;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .container {
+        margin-top: -40px;
+    }
 }
